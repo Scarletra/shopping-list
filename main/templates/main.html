@@ -35,16 +35,14 @@
 
     <br />
 
-    <a href="{% url 'main:create_product' %}">
-        <button>
-            Add New Product
-        </button>
+
+    <a class="inline-block rounded border border-indigo-600 bg-indigo-600 px-12 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-indigo-600 focus:outline-none focus:ring active:text-indigo-500" href="{% url 'main:create_product' %}">
+    Add New Product
     </a>
-    <h5>Sesi terakhir login: {{ last_login }}</h5>
-    <a href="{% url 'main:logout' %}">
-        <button>
-            Logout
-        </button>
+    <a class="inline-block rounded border border-indigo-600 bg-indigo-600 px-12 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-indigo-600 focus:outline-none focus:ring active:text-indigo-500" href="{% url 'main:logout' %}">
+    Logout
     </a>
+
+    <h5>Sesi terakhir login: {{ last_login }}</h5>  
 
 {% endblock content %}
